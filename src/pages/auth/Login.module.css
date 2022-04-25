@@ -1,0 +1,35 @@
+.input {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  .section{
+      width: 40%;
+      margin: auto;
+      margin-top: 10%;
+  }
+  .button{
+      padding: 10px;
+      font-family:UI-SANS-SERIF ;
+      font-size:18px;
+      text-align: center;
+      color:#ccc;
+      background-color: #3F3F3F;
+      border-radius: 30px;
+
+  }
+  
+  .input label {
+    font-weight: bold;
+    margin-right: 1rem;
+  }
+  
+  .input input {
+    width: 20rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font: inherit;
+    padding-left: 0.5rem;
+  }
+  
