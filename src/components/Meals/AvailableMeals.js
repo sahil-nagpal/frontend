@@ -13,15 +13,14 @@ const AvailableMeals = () =>{
 	const {meals} = useSelector((state)=>state.meal)
 	const dispatch = useDispatch()
 	useEffect(()=>{
-		console.log(">>>>>>MainPage")
 		dispatch(fetchMeals())
 		
 	},[])
 
 	const mealList = meals.map( (meal)=>
 		<MealItem
-		key={meal.key} 
-		id={meal.id}
+		key={meal._id} 
+		id={meal._id}
 		name={meal.name} 
 		description={meal.description} 
 		price={meal.price} />)

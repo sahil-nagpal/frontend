@@ -11,6 +11,7 @@ export const mealSlice = createSlice({
         newMeals:(state,action)=>{
             try{
                 let allMeals = action.payload.meals
+                console.log("allMeals>>",allMeals)
                 state.meals = allMeals
             
             }

@@ -48,11 +48,16 @@ export const cartSlice = createSlice({
                         if (existingItem.quantity >1){
                             existingItem.quantity--
                             state.totalBill = state.totalBill - (existingItem.price * 1)
+                            break;
                         }
                         else{
                             state.items =  state.items.filter(item=>item._id != itemId)
                             state.totalBill = state.totalBill - (existingItem.price * 1)
+                            break;
                         }
+                }
+                if(state.totalBill < 0){
+                    state.totalBill = 0
                 }
             }
             catch(err){

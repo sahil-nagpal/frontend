@@ -9,12 +9,13 @@ const MealItem = (props) => {
 	const {addToCart} = cartActions
 	const addToCartHandler = (amount)=>{
 		let item = {
-			id:props._id,
+			id:props.id,
 			_id:props.id,
 			name:props.name,
 			price:props.price,
 			quantity :amount,
 		}
+		console.log("props>>>>",props)
 		dispatch(addToCart({"item":item}))
 	}
 	const price = `$${props.price.toFixed(2)}`;

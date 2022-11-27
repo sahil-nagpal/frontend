@@ -15,7 +15,7 @@ const Cart = props =>
 	const removeOneItem = (id)=>{
 		dispatch(updateQuantity({"itemId":id,"type":"remove"}))
 	}
-	const cartItems = items.map((item)=>{ return <CartItem key={item.key} name={item.name} summary={item.description} amount={item.quantity} price={item.price} onAdd={addOneItem.bind(null,item)} onRemove={removeOneItem.bind(null,item._id)} />})
+	const cartItems = items.map((item)=>{ return <CartItem key={item.id} name={item.name} summary={item.description} amount={item.quantity} price={item.price} onAdd={addOneItem.bind(null,item)} onRemove={removeOneItem.bind(null,item._id)} />})
 	
 	const fixedTotalAm = totalBill!= undefined ?totalBill.toFixed(2):0
 	return <Modal>
