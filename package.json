@@ -1,6 +1,9 @@
 {
   "name": "cart-frontend",
   "version": "0.1.0",
+  "engines": {
+    "node": "18.12.1"
+  },
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.1",
     "antd": "^4.20.0",
