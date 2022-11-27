@@ -15,6 +15,19 @@
   margin: 1rem 0;
 }
 
+.message-box{
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 50px;
+}
+.message-box p:nth-child(1){
+  color:green;
+}
+.message-box p:nth-child(2){
+  font-size: 18px !important;
+}
+
 .actions {
   text-align: right;
 }

@@ -3,6 +3,7 @@ import { createSlice } from '@reduxjs/toolkit';
 let initalState = {
     "items":[],
     "totalBill":0,
+    "itemOrdered":false,
 } 
 
 export const cartSlice = createSlice({
@@ -63,6 +64,17 @@ export const cartSlice = createSlice({
             catch(err){
                 console.log("error in updateQuantity ::",err)
             }
+        },
+        orderItems:(state,action)=>{
+            if (action.payload.type == "ordered"){
+                state.itemOrdered = true
+                state.items = []
+                state.totalBill = 0
+            }
+            if (action.payload.type == "hide-cart"){
+                state.itemOrdered = false
+            }
         }
+
     }
 })

@@ -22,7 +22,6 @@ function App() {
   const {items,totalBill} = useSelector((state)=>state.cart)
 
   useEffect(()=>{
-    console.log("items ::::",items)
   },[items])
 
   const showCart = ()=>{

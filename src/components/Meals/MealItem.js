@@ -15,7 +15,6 @@ const MealItem = (props) => {
 			price:props.price,
 			quantity :amount,
 		}
-		console.log("props>>>>",props)
 		dispatch(addToCart({"item":item}))
 	}
 	const price = `$${props.price.toFixed(2)}`;
