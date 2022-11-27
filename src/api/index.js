@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 let apiClient = axios.create({
-    baseURL:`http://localhost:8000/api`
+    baseURL:`https://cart-back.herokuapp.com/api`
 })
 apiClient.interceptors.request.use((request)=>{
     let access_token = localStorage.getItem("access_token")
